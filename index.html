@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MOOC de Inglés y HCD – Servicio a Pedido por WhatsApp</title>
+  <meta name="description" content="Promoción de MOOC: Inglés $10, HCD total $25, módulos individuales o combinados (PowerPoint, Excel, Word) $3.50 c/u, paquete 6 módulos $25. Solicita por WhatsApp."/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">JP</div>
+        <span>Servicios MOOC · Inglés & HCD</span>
+      </div>
+      <a href="#whatsapp" class="btn">Solicitar por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>¿Necesitas que <em>haga tu MOOC</em>? Rápido, confiable y a precio justo.</h1>
+        <p class="muted">Ofrezco <strong>MOOC de Inglés ($10)</strong>, <strong>HCD total ($25)</strong> o <strong>módulos sueltos</strong> (PowerPoint, Excel, Word) a $3.50 c/u, combinables hasta 3 módulos.</p>
+
+        <div class="card" id="whatsapp">
+          <h2>Solicita tu pedido</h2>
+          <div class="two">
+            <div class="field">
+              <label>Tu nombre (opcional)</label>
+              <input id="nombre" placeholder="Escribe tu nombre" />
+            </div>
+            <div class="field">
+              <label>Número de WhatsApp</label>
+              <input id="telefono" placeholder="Ej. 5939XXXXXXXX" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Servicio</label>
+            <select id="servicio">
+              <option value="Inglés">MOOC de Inglés — $10</option>
+              <option value="HCD">MOOC HCD (Total 6 módulos) — $25</option>
+              <option value="modulos">Seleccionar módulos específicos</option>
+            </select>
+          </div>
+
+          <div id="modulosSection" style="display:none;">
+            <label>Selecciona tus módulos (1 a 3)</label>
+            <div class="module-options">
+              <div class="module" data-value="PowerPoint">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732224.png" alt="PowerPoint" />
+                PowerPoint
+              </div>
+              <div class="module" data-value="Excel">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" />
+                Excel
+              </div>
+              <div class="module" data-value="Word">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732222.png" alt="Word" />
+                Word
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Detalles / Indicaciones</label>
+            <textarea id="detalle" rows="3" placeholder="Escribe fechas, plataforma, usuario de acceso, etc."></textarea>
+          </div>
+
+          <p id="total" class="muted">Total estimado: —</p>
+          <div class="two">
+            <button class="btn" id="calc">Calcular total</button>
+            <button class="btn" id="enviar">Abrir WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Servicios MOOC · Hecho con 💻 — Consultas por WhatsApp.
+  </footer>
+
+  <button class="wa-float" id="floatWA">💬 WhatsApp</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
