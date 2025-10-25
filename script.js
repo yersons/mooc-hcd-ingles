@@ -1,4 +1,4 @@
-const DEFAULT_WA_NUMBER = "593999999999";
+const DEFAULT_WA_NUMBER = "593959239145";
 const servicio = document.getElementById('servicio');
 const modulosSection = document.getElementById('modulosSection');
 const totalEl = document.getElementById('total');
