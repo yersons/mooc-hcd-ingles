@@ -46,7 +46,6 @@ function openWhatsApp(){
     mensaje += `Deseo solicitar los módulos: ${seleccionados.join(', ')}. Total $${total.toFixed(2)}.`;
   }
   if(detalle) mensaje += `\nDetalles: ${detalle}`;
-  mensaje += `\n¿Podemos coordinar la entrega?`;
   window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, '_blank');
 }
 
